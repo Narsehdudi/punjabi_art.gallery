@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img class="firstImg" src="img/Logo.jpg" alt="Profile Picture" />
+      <h1>punjabi_art.gallery</h1>
+      <h4>Place your order by clicking on the buttons😍👇</h4>
+      <div class="buttons">
+        <div class="divForFlex">
+          <img class="secondImg" src="img/order.jpg" alt="Country Icon" />
+          <button onclick="contactWhatsApp('+918901803976')">Place Your Order From UK / India</button>
+        </div>
+        <div class="divForFlex">
+          <img class="secondImg" src="img/order.jpg" alt="Globe Icon" />
+          <button onclick="contactWhatsApp('+918901803976')">Place Your Order From Other Countries 🌏✅</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function contactWhatsApp(phoneNumber) {
+      const message = encodeURIComponent("Hello, I want to place an order❤️✅");
+      const url = `https://wa.me/${phoneNumber.replace('+', '')}?text=${message}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>

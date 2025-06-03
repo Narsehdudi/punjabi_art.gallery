@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PunjabiArtGallery</title>
+  <link rel="icon" href="img/Logo.jpg" type="image/png">
   <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
+
 <body>
   <div class="container">
     <div class="profile">
       <img class="firstImg" src="img/Logo.jpg" alt="Profile Picture" />
+      <h3>Welcome🙏</h3>
       <h1>punjabi_art.gallery</h1>
       <h4>Place your order by clicking on the buttons😍👇</h4>
       <div class="buttons">
@@ -22,15 +31,294 @@
           <button onclick="contactWhatsApp('+918901803976')">Place Your Order From Other Countries 🌏✅</button>
         </div>
       </div>
+      <div class="arrow"
+        style="display: flex; justify-content: center; gap: 10px; align-items: center; margin-top: 4%; ">
+        <img src="/img/arrow.png" style="width: 20px;" alt="arrow">
+        <p style="font-weight: 600;">Scroll Down</p>
+      </div>
     </div>
-  </div>
 
-  <script>
-    function contactWhatsApp(phoneNumber) {
-      const message = encodeURIComponent("Hello, I want to place an order❤️✅");
-      const url = `https://wa.me/${phoneNumber.replace('+', '')}?text=${message}`;
-      window.open(url, '_blank');
-    }
-  </script>
+    <!-- 2nd section -->
+    <div style="margin-top: 15%; ">
+      <hr>
+      <p style="font-weight: 600; font-size: large; margin-top: 5%;">Check out latest work 🔥</p>
+      <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0027.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0035.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0028.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0029.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0030.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0034.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0033.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0031.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- 3rd section -->
+    <div style="margin-top: 15%; ">
+      <hr>
+      <p style="font-weight: 600; font-size: large; margin-top: 5%;">Photos Refine🔥</p>
+      <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0017.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/WhatsApp Image 2025-06-03 at 21.14.16_7fdf9edb.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/WhatsApp Image 2025-06-03 at 21.14.17_4d1be8df.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/WhatsApp Image 2025-06-03 at 21.14.18_ff342a88.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item active">
+            <img src="img/IMG-20250603-WA0013.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 4th section -->
+    <!-- Review Carousel -->
+    <div>
+      <hr>
+      <p style="font-weight: 600; font-size: large; margin-top: 5%;">What our customers say ❤️</p>
+      <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
+        style="margin-top: 5%;">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★★</span>
+              </div>
+              <p>“This website helped me bring back memories by merging old photos of my late grandfather with our
+                recent
+                family pictures. Truly magical!”</p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Ramesh Singh" />
+                <div class="profile-name">Ramesh Singh</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★☆</span>
+              </div>
+              <p>“I merged my late mother's old wedding photo with my wedding pictures. The result was emotional and
+                beautiful. Highly recommend this site!”</p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Priya Kaur" />
+                <div class="profile-name">Priya Kaur</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★★</span>
+              </div>
+              <p>“I enhanced my grandfather’s old blurry photo here. It looks so clear now, feels like I’m seeing him
+                again!”</p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Deepak Sharma" />
+                <div class="profile-name">Deepak Sharma</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★★</span>
+              </div>
+              <p>“Their photo merging service gave me a new picture combining my father’s old portrait with my wedding
+                photo. So emotional and perfectly done.”</p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Suman Gill" />
+                <div class="profile-name">Suman Gill</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★☆</span>
+              </div>
+              <p>“Easy to use website, and the photo quality enhancement service really improved my old pictures’
+                clarity.”</p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Meena Kaur" />
+                <div class="profile-name">Meena Kaur</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★★</span>
+              </div>
+              <p>“Loved how they merged my late grandmother's photo into my son's wedding pictures. It brought tears to
+                my
+                eyes.”</p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Anita Singh" />
+                <div class="profile-name">Anita Singh</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★☆</span>
+              </div>
+              <p>“The photo enhancement service is top-notch. My old wedding pictures now look fresh and vibrant!”</p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Ankit Kaur" />
+                <div class="profile-name">Ankit Kaur</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★★</span>
+              </div>
+              <p>“I never thought merging old and new photos could look so natural. The team did a fantastic job!”</p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Shalini Sidhu" />
+                <div class="profile-name">Shalini Sidhu</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★★</span>
+              </div>
+              <p>“The photo merging service helped me create a beautiful memory with my late parents. Highly thankful!”
+              </p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Rohit Bedi" />
+                <div class="profile-name">Rohit Bedi</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-box">
+              <div>
+                <span class="stars">★★★★☆</span>
+              </div>
+              <p>“Very happy with the clarity improvements on my old photos. Easy process and great results!”</p>
+              <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" style="width: 30px; height: 30px;"
+                  alt="Neha Sidhu" />
+                <div class="profile-name">Neha Sidhu</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- 5th section -->
+    <hr>
+    <div style="margin-top: 5%;">
+      <p>Reach out us on social media ❤️</p>
+      <div style="margin-top: 5%; display: flex; justify-content: center; gap: 20px;">
+        <a href="https://www.instagram.com/punjabi_art.gallery/" target="_blank">
+          <img style="width: 30px;" src="img/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/people/Punjabi-art-gallery/61576640049646/?mibextid=wwXIfr&rdid=IpIHZUQbPN1wP5qJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15oEEkbrYW%2F%3Fmibextid%3DwwXIfr"
+          target="_blank">
+          <img style="width: 30px;" src="img/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://youtube.com/@punjabi_art.gallery?si=OykDAjaq8fyNUQAr " target="_blank">
+          <img style="width: 30px;" src="img/youtube.png" alt="YouTube" />
+        </a>
+        <a href="https://wa.me/918901803976?text=Hello Sir!" target="_blank">
+          <img style="width: 30px;" src="img/social.png" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      function contactWhatsApp(phoneNumber) {
+        const message = encodeURIComponent("Hello, I want to place an order❤️✅");
+        const url = `https://wa.me/${phoneNumber.replace('+', '')}?text=${message}`;
+        window.open(url, '_blank');
+      }
+    </script>
 </body>
+
 </html>

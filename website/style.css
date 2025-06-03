@@ -1,3 +1,4 @@
+/* Reset and base */
 * {
   margin: 0;
   padding: 0;
@@ -17,12 +18,19 @@ body {
   text-align: center;
   padding: 30px;
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: 95%;
-  max-width: 400px;
 }
 
+/* container max-width 400px only on desktop */
+@media (min-width: 600px) {
+  .container {
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Profile Section */
 .profile img.firstImg {
   width: 150px;
   height: 150px;
@@ -76,4 +84,86 @@ body {
   border: none;
   text-align: left;
   cursor: pointer;
+}
+
+/* Animation for arrow */
+.arrow {
+  animation: bounce 1.5s infinite;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Review Carousel */
+#reviewCarousel {
+  background-color: #f8f9fa;
+  padding: 20px 20px;
+  max-width: 800px;
+  margin: auto;
+  height: 280px; /* Fixed height */
+  overflow: hidden;
+}
+
+#reviewCarousel .carousel-item {
+  text-align: center;
+  height: 100%; /* Fill carousel height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#reviewCarousel .review-box {
+  max-width: 700px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+#reviewCarousel .stars {
+  color: #ffc107;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+#reviewCarousel .profile {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+#reviewCarousel .profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#reviewCarousel .profile-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#reviewCarousel .carousel-control-prev, 
+#reviewCarousel .carousel-control-next {
+  filter: brightness(0.7);
+}
+
+#reviewCarousel .carousel-item {
+  display: none;
+}
+
+#reviewCarousel .carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
